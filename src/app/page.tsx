@@ -11,7 +11,7 @@ const starter = [
 
 export default function Home() {
   return (
-  <main>
+  <main className="main-container">
     <h1>greatfrontend-projects</h1>
     {/* <p>by roifjcf</p> */}
     <ul>
