@@ -1,11 +1,13 @@
 import "./styles.css";
-import { prefix } from "@/prefix";
+
+import nextConfig from "../../../next.config";
 
 const info = {
   name: "Sarah Dole",
   handle: "sarahdole",
   message: "I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!",
-  img: `${prefix}/testimonial-card/profile-thumbnail.png`,
+  img: nextConfig.basePath ?
+    `${nextConfig.basePath}/testimonial-card/profile-thumbnail.png` : `/testimonial-card/profile-thumbnail.png`,
 };
 
 export default function Page() {
