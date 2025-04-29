@@ -1,10 +1,11 @@
 import "./styles.css";
+import { prefix } from "@/prefix";
 
 const info = {
   name: "Sarah Dole",
   handle: "sarahdole",
   message: "I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!",
-  img: "/testimonial-card/profile-thumbnail.png",
+  img: `${prefix}/testimonial-card/profile-thumbnail.png`,
 };
 
 export default function Page() {
