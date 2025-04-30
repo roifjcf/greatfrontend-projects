@@ -17,7 +17,7 @@ export default function Page() {
     getLatestArrivals()
     .then((data) => {
       // console.log(data);
-      let product = [];
+      const product = [];
       for (const d of data["data"]) {
         const newProductData: ProductInfo = {
           product_id: d["product_id"],

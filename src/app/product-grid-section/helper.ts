@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 
 export const getLatestArrivals = async () => {
   const url = "https://www.greatfrontend.com/api/projects/challenges/e-commerce/products?collection=latest";
@@ -10,5 +10,3 @@ export const getLatestArrivals = async () => {
   }
 
 }
-
-// getLatestArrivals().then(data=>console.log(data));

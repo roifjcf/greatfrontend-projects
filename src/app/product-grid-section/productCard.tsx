@@ -26,8 +26,8 @@ export default function ProductCard(props: Props) {
   const imgURL = useMemo(() => {
     return props.info.images.find(i=>i.color===currentColor)?.image_url ?? "";
   }, [currentColor, props.info.images]);
-  const originalPrice = useMemo(()=> getPriceByColor(currentColor, "list_price"), [currentColor]);
-  const salePrice = useMemo(()=> getPriceByColor(currentColor, "sale_price"), [currentColor]);
+  const originalPrice = useMemo(()=> getPriceByColor(currentColor, "list_price"), [currentColor, getPriceByColor]);
+  const salePrice = useMemo(()=> getPriceByColor(currentColor, "sale_price"), [currentColor, getPriceByColor]);
 
 
   return (
