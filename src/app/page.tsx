@@ -9,6 +9,10 @@ const starter = [
   "/testimonial-card"
 ];
 
+const mid = [
+  "/product-grid-section"
+];
+
 export default function Home() {
   return (
   <main className="main-container">
@@ -21,6 +25,11 @@ export default function Home() {
     <h2>Starter</h2>
     <ul>
       {starter.map((url, i)=>
+      <li key={i}><Link href={url} target="_blank">{url.substring(1)+" ↗"}</Link></li>)}
+    </ul>
+    <h2>Mid</h2>
+    <ul>
+      {mid.map((url, i)=>
       <li key={i}><Link href={url} target="_blank">{url.substring(1)+" ↗"}</Link></li>)}
     </ul>
   </main>
